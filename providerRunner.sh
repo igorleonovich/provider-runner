@@ -1,5 +1,10 @@
 #!/bin/bash
 
+scriptPath=$(realpath $0)
+actionsPath=$(dirname $scriptPath)
+providerRunnerPath=$(dirname $actionsPath)
+projectsPath=$(dirname $providerRunnerPath)
+
 echo "ProviderRunner started"
 
 # 1. ProviderServer?

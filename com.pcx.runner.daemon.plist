@@ -9,9 +9,6 @@
     <key>RunAtLoad</key>
     <true/>
 
-    <!-- <key>StartInterval</key>
-    <integer>20</integer> -->
-
     <key>StandardErrorPath</key>
     <string>/Users/Shared/PCX/ProviderRunner/stderr.log</string>
 
@@ -30,7 +27,7 @@
     <key>ProgramArguments</key>
     <array>
       <string>/bin/bash</string>
-      <string>/Users/Shared/PCX/ProviderRunner/providerRunner.sh</string>
+      <string>/Users/Shared/PCX/ProviderRunner/actions/run.sh</string>
     </array>
 
   </dict>
