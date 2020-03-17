@@ -10,10 +10,10 @@
     <true/>
 
     <key>StandardErrorPath</key>
-    <string>/Users/Shared/PCX/ProviderRunner/stderr.log</string>
+    <string>/Users/Shared/PCX/Provider/ProviderRunner/stderr.log</string>
 
     <key>StandardOutPath</key>
-    <string>/Users/Shared/PCX/ProviderRunner/stdout.log</string>
+    <string>/Users/Shared/PCX/Provider/ProviderRunner/stdout.log</string>
 
     <key>EnvironmentVariables</key>
     <dict>
@@ -22,12 +22,12 @@
     </dict>
 
     <key>WorkingDirectory</key>
-    <string>/Users/Shared/PCX/ProviderRunner</string>
+    <string>/Users/Shared/PCX/Provider/ProviderRunner</string>
 
     <key>ProgramArguments</key>
     <array>
       <string>/bin/bash</string>
-      <string>/Users/Shared/PCX/ProviderRunner/actions/run.sh</string>
+      <string>/Users/Shared/PCX/Provider/ProviderRunner/actions/run.sh</string>
     </array>
 
   </dict>

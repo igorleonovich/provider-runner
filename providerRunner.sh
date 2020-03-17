@@ -1,11 +1,16 @@
 #!/bin/bash
 
+currentPath=$(pwd)
 scriptPath=$(realpath $0)
-actionsPath=$(dirname $scriptPath)
-providerRunnerPath=$(dirname $actionsPath)
-projectsPath=$(dirname $providerRunnerPath)
+providerRunnerPath=$(dirname $scriptPath)
+providerPath=$(dirname $providerRunnerPath)
+pcxPath=$(dirname $providerPath)
+originalPCXProjectsPath="/Volumes/New/ProductCompanyX/Infrastructure/Projects"
 
-echo "ProviderRunner started"
+bash $originalPCXProjectsPath/Provider/ProviderServer/actions/install.sh
+
+echo "Set Keeper's State to everythingIsOk"
+echo "state=everythingIsOk" > $pcxPath/keeper/variables/state
 
 # 1. ProviderServer?
 # 2. ProviderClient?
